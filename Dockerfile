@@ -7,8 +7,7 @@ COPY ["sources.list", "/etc/apt/sources.list"]
 RUN apt-get update && \
     apt-get install -y openssh-server default-jdk && \
     apt-get autoremove -y && \
-    apt-get clean && \
-    systemctl enable ssh.service
+    apt-get clean
 
 RUN mkdir -p /root/.ssh
 COPY ["id_rsa.pub", "/root/.ssh/authorized_keys"]
