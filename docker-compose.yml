@@ -3,7 +3,6 @@ version: '3'
 services:
   server:
     build: .
-    command: ["bash", "-c", "service ssh restart && tail -f /dev/null"]
     ports:
       - '8122:22'
       - '8123:8123'
