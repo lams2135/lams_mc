@@ -1,2 +1,3 @@
-# lams_mc_server
+# Lams Minecraft server
+
 Dockerfile and docker-compose.yml for Lams Minecraft server
