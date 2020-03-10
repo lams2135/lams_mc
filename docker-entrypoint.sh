@@ -3,7 +3,7 @@
 _term() {
   echo "Caught SIGTERM signal!"
   # TODO: add a curl cmd to notify in SNS?
-  mcrcon -H localhost -p 1PASSWD1 -w 3 "say Server is restarting in 10 sec!" save-all stop
+  mcrcon -H 127.0.0.1 -p 1PASSWD1 -w 3 "say Server is restarting in 10 sec!" save-all stop
 }
 
 trap _term SIGTERM
